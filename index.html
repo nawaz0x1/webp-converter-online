@@ -28,27 +28,20 @@
 
     
 
-  <button onclick="handleClick()">Click to View Ad</button>
-  
-  <script>
-  function handleClick() {
-      // 1. Open the ad link in a new tab
-      window.open("https://oorsoozo.top/4/9170008");
-  
-      // 2. Execute your API call
-      const telegram_id = 1; // Replace with actual Telegram ID
-      const score_increment = 100;
-  
-      fetch(`https://api.hinatawifu.online/reward/?telegram_id=${telegram_id}&score_increment=${score_increment}`)
-          .then(res => res.json())
-          .then(data => {
-              console.log("Reward successful:", data);
-          })
-          .catch(err => {
-              console.error("Failed to reward:", err);
-          });
-  }
-  </script>
+<script src='//whephiwums.com/sdk.js' data-zone='9224268' data-sdk='show_9224268'></script>           
+ <button onclick="watchAdAndReward()">Watch Ad & Get Reward</button>
+ 
+ <script>
+ function watchAdAndReward() {
+     show_9224268('pop')
+         .then(() => {
+             console.log("Clicked");
+         })
+         .catch(e => {
+             console.warn("Ad error:", e);
+         });
+ }
+ </script>
 
   </body>
 </html>
